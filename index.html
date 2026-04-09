@@ -5,18 +5,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>sizimityper 利用規約</title>
   <style>
-    body { margin: 0; font-family: sans-serif; background: #f5f5f5; }
-    header { background: #4a6fa5; color: white; padding: 16px 24px; }
-    header h1 { margin: 0; font-size: 1.2rem; }
-    header p { margin: 4px 0 0; font-size: 0.85rem; opacity: 0.85; }
-    iframe { display: block; width: 100%; height: calc(100vh - 80px); border: none; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: sans-serif; background: #f5f5f5; color: #222; }
+
+    header { background: #4a6fa5; color: white; padding: 20px 32px; }
+    header h1 { font-size: 1.3rem; margin-bottom: 4px; }
+    header p { font-size: 0.85rem; opacity: 0.8; }
+
+    main { max-width: 800px; margin: 32px auto; padding: 0 16px 64px; }
+
+    /* 最新版 */
+    .latest { background: white; border-radius: 8px; box-shadow: 0 1px 4px #0002; padding: 24px 28px; margin-bottom: 40px; }
+    .latest h2 { font-size: 1rem; color: #4a6fa5; margin-bottom: 12px; text-transform: uppercase; letter-spacing: .05em; }
+    .latest .version { font-size: 1.5rem; font-weight: bold; margin-bottom: 4px; }
+    .latest .date { color: #666; font-size: 0.9rem; margin-bottom: 16px; }
+    .latest .desc { font-size: 0.9rem; color: #444; margin-bottom: 20px; background: #f8f8f8; padding: 10px 14px; border-left: 3px solid #4a6fa5; border-radius: 2px; }
+    .btn { display: inline-block; background: #4a6fa5; color: white; text-decoration: none; padding: 10px 20px; border-radius: 6px; font-size: 0.95rem; }
+    .btn:hover { background: #3a5f95; }
+
+    /* 過去版テーブル */
+    .history h2 { font-size: 1rem; color: #4a6fa5; text-transform: uppercase; letter-spacing: .05em; margin-bottom: 12px; }
+    table { width: 100%; border-collapse: collapse; background: white; border-radius: 8px; box-shadow: 0 1px 4px #0002; overflow: hidden; }
+    th { background: #eef2f8; text-align: left; padding: 10px 16px; font-size: 0.8rem; color: #555; font-weight: 600; }
+    td { padding: 10px 16px; font-size: 0.88rem; border-top: 1px solid #eee; vertical-align: top; }
+    td a { color: #4a6fa5; text-decoration: none; }
+    td a:hover { text-decoration: underline; }
+    td.change { color: #444; }
   </style>
 </head>
 <body>
   <header>
-    <h1>sizimityper 利用規約（VN3ライセンス v1.0.2）</h1>
-    <p>有効日: 2026年4月9日 ／ <a href="20260409093753vn3license_ja.pdf" style="color:#cde;" download>PDFをダウンロード</a></p>
+    <h1>sizimityper 利用規約</h1>
+    <p>VRChat アバター・アセット向け利用規約（VN3ライセンス準拠）</p>
   </header>
-  <iframe src="20260409093753vn3license_ja.pdf"></iframe>
+
+  <main>
+    <!-- ===== 最新版 ===== -->
+    <div class="latest">
+      <h2>📄 最新版</h2>
+      <div class="version">v1.0.2</div>
+      <div class="date">有効日: 2026年4月9日</div>
+      <div class="desc">初版リリース</div>
+      <a class="btn" href="20260409093753vn3license_ja.pdf" download>PDFをダウンロード</a>
+    </div>
+
+    <!-- ===== 過去版一覧 ===== -->
+    <!-- 新バージョン追加時: 上の「最新版」を更新し、旧バージョンをここの先頭行に追加 -->
+    <div class="history">
+      <h2>🕒 過去版一覧</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>バージョン</th>
+            <th>有効日</th>
+            <th>変更内容</th>
+            <th>PDF</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- 例: 過去版が出たらここに追加
+          <tr>
+            <td>v1.0.1</td>
+            <td>2026-XX-XX</td>
+            <td class="change">〇〇条の文言を修正</td>
+            <td><a href="XXXXXXXX_vn3license_ja.pdf">DL</a></td>
+          </tr>
+          -->
+          <tr>
+            <td colspan="4" style="color:#aaa; text-align:center; font-size:0.85rem;">（過去版なし）</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
 </body>
 </html>
